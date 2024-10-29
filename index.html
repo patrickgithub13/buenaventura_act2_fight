@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Act1_Create and Fight</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="default.css">
+</head>
+<body>
+    <canvas id=c></canvas>
+    <div class="container">
+        
+        <h2>NAME YOUR CHARACTER</h2>
+
+        <div class="controls">
+            <input type="text" id="nameInput" placeholder="Enter name">
+            <div tabindex="0" class="plusButton" onclick="addName()">
+                <svg class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                    <g mask="url(#mask0_21_345)">
+                        <path d="M13.75 23.75V16.25H6.25V13.75H13.75V6.25H16.25V13.75H23.75V16.25H16.25V23.75H13.75Z"></path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <div class="winnerButtonContainer">
+            <button onclick="chooseRandomWinner()" class="playButton">
+                       <span class="fight">F I G H T</span> 
+                <div id="clip">
+                    <div id="leftTop" class="corner"></div>
+                    <div id="rightBottom" class="corner"></div>
+                    <div id="rightTop" class="corner"></div>
+                    <div id="leftBottom" class="corner"></div>
+                </div>
+                <span id="rightArrow" class="arrow"></span>
+                <span id="leftArrow" class="arrow"></span>
+            </button>
+        </div>
+
+        <div id="nameList" class="itemContainer"></div>
+        <div id="winnerDisplay" class="winner"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="background.js"></script>
+
+</body>    
+</html>
